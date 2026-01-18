@@ -153,4 +153,66 @@ h1{
         text-shadow: 0 0 5px rgba(255,255,255,0.3);
     }
 }
+/* BRAND NAME */
+.brand-name{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 8px;
+    background: linear-gradient(90deg, #FFD700, #FF6A00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glowBrand 2.5s infinite alternate;
+}
+
+/* BRAND SUB TEXT */
+.brand-sub{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+    margin-top: -8px;
+    opacity: 0.85;
+}
+
+/* COMING SOON TEXT */
+.coming-soon{
+    margin-top: 20px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 46px;
+    letter-spacing: 6px;
+}
+
+.coming-soon span{
+    animation: blinkText 1.5s infinite;
+}
+
+/* Delay SOON */
+.coming-soon span:nth-child(2){
+    animation-delay: 0.75s;
+}
+
+/* ANIMATIONS */
+@keyframes blinkText{
+    0%{
+        opacity: 0.3;
+        text-shadow: 0 0 8px rgba(255,255,255,0.3);
+    }
+    50%{
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255,215,0,0.9);
+    }
+    100%{
+        opacity: 0.3;
+        text-shadow: 0 0 8px rgba(255,255,255,0.3);
+    }
+}
+
+@keyframes glowBrand{
+    from{
+        text-shadow: 0 0 10px rgba(255,215,0,0.4);
+    }
+    to{
+        text-shadow: 0 0 35px rgba(255,106,0,0.9);
+    }
+}
 
